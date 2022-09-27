@@ -15,7 +15,7 @@ app.use(session({
 app.get('/', function(req, res) {
   res.render('pages/auth');
 });
-
+/*  PASSPORT SETUP  */
 const passport = require('passport');
 var userProfile;
 
@@ -64,5 +64,5 @@ app.get('/auth/google/callback',
 const port = process.env.PORT || 3000;
 app.listen(port , () => console.log('App listening on port ' + port));
 
-/*  PASSPORT SETUP  */
+
 
